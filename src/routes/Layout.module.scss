@@ -1,0 +1,24 @@
+@use "../styles/variables" as variable;
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  gap: 20px;
+  flex-grow: 1;
+
+
+  @media screen and (min-width: variable.$width-md) {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+.main {
+  width: 100%;
+  
+  @media screen and (min-width: variable.$width-md) {
+    width: calc(100% - 320px);
+  }
+}

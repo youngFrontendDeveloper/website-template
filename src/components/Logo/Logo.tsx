@@ -1,9 +1,13 @@
 import {Link} from "react-router-dom";
+import logoImg from "../../images/logo.svg";
+import LogoImgFooter from "../../images/logo-footer.svg"
 
-export default function Logo() {
+import styles from "./Logo.module.scss";
+
+export default function Logo({footer}: { footer: boolean }) {
     return (
         <Link to="/">
-            <img src="./logo.svg" alt="Logo" width={50} height={50} />
+            <img src={footer ? LogoImgFooter : logoImg} alt="Logo" width={40} height={40} />
         </Link>
     )
 }

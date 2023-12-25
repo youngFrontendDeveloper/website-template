@@ -10,9 +10,7 @@ import CountriesPage from "./pages/Countries/Countries";
 import CountryPage from "./pages/Country/Country";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import AboutPage from "./pages/About/About";
-
-import './App.scss';
-
+import ContactsPage from "./pages/Contacts/Contacts";
 
 
 function App() {
@@ -28,7 +26,6 @@ function App() {
                     path: "/",
                     element: <Home />,
                 },
-                // other pages....
                 {
                     path: "/about",
                     element: <AboutPage />,
@@ -41,6 +38,11 @@ function App() {
                     path: "/countries/:id",
                     element: <CountryPage />,
                 },
+                {
+                    path: "/contacts",
+                    element: <ContactsPage />,
+                },
+
             ],
         },
     ])

@@ -1,0 +1,49 @@
+@use "../../styles/variables" as variable;
+
+.menu {
+  position: absolute;
+  top: 60px;
+  right: -12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 290px;
+  padding: 20px 20px 20px 40px;
+  background-color: variable.$color-white;
+  //border: 1px solid variable.$color-bg-footer;
+  border-bottom-left-radius: 30px;
+  box-shadow: -5px 4px 6px 0px variable.$color-shadow;
+  transform: translateX(120%);
+  transition: transform 0.2s;
+
+  @media screen and (min-width: variable.$width-md) {
+
+    position: static;
+    flex-direction: row;
+    justify-content: flex-end;
+    min-width: 400px;
+    background-color: transparent;
+    box-shadow: none;
+    transform: translateX(0) !important;
+  }
+}
+
+//.menu__link {
+//
+//  &:hover {
+//    transform: translateX(-2px);
+//
+//    @media screen and (min-width: variable.$width-md) {
+//      transform: translateY(-1px)
+//    }
+//  }
+//
+//}
+
+
+.menu__close-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}

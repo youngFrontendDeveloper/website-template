@@ -1,0 +1,9 @@
+@use "../../styles/variables" as variable;
+
+.sidebar {
+  width: 100%;
+
+  @media screen and (min-width: variable.$width-md){
+    width: 300px;
+  }
+}

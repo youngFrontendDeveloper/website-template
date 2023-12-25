@@ -1,0 +1,28 @@
+@use "../../styles/variables" as variable;
+
+.header {
+  flex-grow: 0;
+  height: 150px;
+  background-image: url(../../images/header-bg.jpg);
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (min-width: variable.$width-md){
+    height: 200px;
+  }
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 20px;
+  padding-bottom: 15px;
+
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}

@@ -1,11 +1,12 @@
-import {useParams} from "react-router-dom";
+
+import Presentation from "../../components/Presentation/Presentation";
 
 
 export default function HomePage() {
-    let {id} = useParams()
+
     return (
         <>
-            I am Home
+         I am a Home
         </>
     )
 }
